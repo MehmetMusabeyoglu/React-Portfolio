@@ -1,4 +1,4 @@
-import React,  { useState } from "react";
+import React, { useState } from 'react';
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
@@ -31,7 +31,7 @@ export default function Main() {
         <header>
           <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
         </header>
-        <main>
+        <main className="main">
           {renderPage()}
           <Footer />
         </main>
