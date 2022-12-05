@@ -6,7 +6,7 @@ function Footer() {
         <footer>
             <div className="text-center pt-3">
             <a
-                className="btn justify-content-md-center"
+                className="btn justify-content-md-center mx-1"
                 href="https://www.linkedin.com/in/mehmet-musabeyoglu/"
                 target="_blank"
                 rel="noreferrer"
@@ -16,7 +16,7 @@ function Footer() {
                 <SiLinkedin color="white" size={25} />
             </a>
             <a
-                className="btn justify-content-md-center"
+                className="btn justify-content-md-center mx-1"
                 href="https://github.com/MehmetMusabeyoglu"
                 target="_blank"
                 rel="noreferrer"
@@ -26,7 +26,7 @@ function Footer() {
                 <SiGithub color="white" size={25} />
             </a>
             <a
-                className="btn justify-content-md-center"
+                className="btn justify-content-md-center mx-1"
                 href="https://medium.com/@mehmetmusabeyoglu"
                 target="_blank"
                 rel="noreferrer"

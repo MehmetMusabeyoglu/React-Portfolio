@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavBar({ currentPage, handlePageChange }) {
     return (
         <div>
-            <Nav justify variant="tabs" defaultActiveKey={"AboutMe"}>
+            <Nav justify variant="tabs" defaultActiveKey={"AboutMe"}  onSelect={(item) => handlePageChange(item)}>
                 <Nav.Item>
                     <Nav.Link href={"AboutMe"}>About Me</Nav.Link>
                 </Nav.Item>
