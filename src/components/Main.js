@@ -29,7 +29,7 @@ export default function Main() {
 
   return (
     <div>
-      <header>
+      <header className="d-flex flex-wrap">
         <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>
       <main>
