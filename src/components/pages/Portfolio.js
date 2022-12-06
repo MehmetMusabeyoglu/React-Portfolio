@@ -1,9 +1,9 @@
-import React from 'react';
-import { FaGithub } from 'react-icons/fa';
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
 import TextEditor from "../assets/TextEditor.jpg";
-import BookReco from "../assets/BookReco's.png";
+import BookReco from "../assets/BookReco"s.png";
 import BILL$ from "../assets/BILL$.jpg";
 import WeatherDashboard from "../assets/WeatherDashboard.jpg";
 import NoteTaker from "../assets/NoteTaker.gif";
@@ -48,22 +48,12 @@ function Portfolio() {
     return (
         <div>
             <h2 className="text-center text-light pt-3"><b>My Projects</b></h2>
-            <div className="container text-center">
-                <Card className="text-secondary">
-                    <Card.Img src={TextEditor} alt="Card image" />
-                    <Card.ImgOverlay>
-                        <Card.Title className="text-center text-light pt-5">Text Editor</Card.Title>
-                        <Card.Text className="text-center text-light pt-5">
-                            This is a wider card with supporting text below as a natural lead-in
-                            to additional content. This content is a little bit longer. <FaGithub />
-                        </Card.Text>
-                    </Card.ImgOverlay>
-                </Card>
+            <div className="container text-center pt-3">
                 <CardGroup>
-                    <Card bg="secondary" >
+                    <Card variant="top" bg="secondary" className="m-3">
                         <Card.Img src={TextEditor} alt="Card image" />
                         <Card.Body>
-                            <Card.Title className="text-dark"><b> <a className="text-dark" href={projects[0].deployed_url}>Text Editor</a></b> </Card.Title>
+                            <Card.Title className="text-dark"><b> <a className="text-dark" href={projects[0].deployed_url}>{projects[0].title}</a></b> </Card.Title>
                             <Card.Text className="text-dark">
                                 <b><em>This is a wider card with supporting text below as a natural lead-in
                                     to additional content. This content is a little bit longer.</em></b>
@@ -79,78 +69,110 @@ function Portfolio() {
                                 </a>
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
                     </Card>
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card variant="top" bg="secondary" className="m-3">
+                        <Card.Img src={BookReco} alt="Card image" />
                         <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
+                            <Card.Title className="text-dark"><b> <a className="text-dark" href={projects[1].deployed_url}>{projects[1].title}</a></b> </Card.Title>
+                            <Card.Text className="text-dark">
                                 <b><em>This is a wider card with supporting text below as a natural lead-in
                                     to additional content. This content is a little bit longer.</em></b>
+                                <a
+                                    className="btn justify-content-md-center mx-1"
+                                    href={projects[1].github_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    role="button"
+                                    alt="GitHub icon"
+                                >
+                                    <FaGithub color="black" size={25} />
+                                </a>
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
-                    </Card>
-                </CardGroup>
-                <CardGroup>
-                    <Card>
-                        <Card.Img src={TextEditor} alt="Card image" />
-                        <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                <b><em>This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</em></b>
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
-                    </Card>
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
-                                <b><em>This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</em></b>
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
                     </Card>
                 </CardGroup>
                 <CardGroup>
-                    <Card>
-                        <Card.Img src={TextEditor} alt="Card image" />
+                    <Card variant="top" bg="secondary" className="m-3">
+                        <Card.Img src={BILL$} alt="Card image" />
                         <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
+                            <Card.Title className="text-dark"><b> <a className="text-dark" href={projects[2].deployed_url}>{projects[2].title}</a></b> </Card.Title>
+                            <Card.Text className="text-dark">
                                 <b><em>This is a wider card with supporting text below as a natural lead-in
                                     to additional content. This content is a little bit longer.</em></b>
+                                <a
+                                    className="btn justify-content-md-center mx-1"
+                                    href={projects[2].github_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    role="button"
+                                    alt="GitHub icon"
+                                >
+                                    <FaGithub color="black" size={25} />
+                                </a>
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
                     </Card>
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card variant="top" bg="secondary" className="m-3">
+                        <Card.Img src={WeatherDashboard} alt="Card image" />
                         <Card.Body>
-                            <Card.Title>Card title</Card.Title>
-                            <Card.Text>
+                            <Card.Title className="text-dark"><b> <a className="text-dark" href={projects[3].deployed_url}>{projects[3].title}</a></b> </Card.Title>
+                            <Card.Text className="text-dark">
                                 <b><em>This is a wider card with supporting text below as a natural lead-in
                                     to additional content. This content is a little bit longer.</em></b>
+                                <a
+                                    className="btn justify-content-md-center mx-1"
+                                    href={projects[3].github_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    role="button"
+                                    alt="GitHub icon"
+                                >
+                                    <FaGithub color="black" size={25} />
+                                </a>
                             </Card.Text>
                         </Card.Body>
-                        <Card.Footer>
-                            <small className="text-muted">Last updated 3 mins ago</small>
-                        </Card.Footer>
+                    </Card>
+                </CardGroup>
+                <CardGroup>
+                    <Card variant="top" bg="secondary" className="m-3">
+                        <Card.Img src={NoteTaker} alt="Card image" />
+                        <Card.Body>
+                            <Card.Title className="text-dark"><b> <a className="text-dark" href={projects[4].deployed_url}>{projects[4].title}</a></b> </Card.Title>
+                            <Card.Text className="text-dark">
+                                <b><em>This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</em></b>
+                                <a
+                                    className="btn justify-content-md-center mx-1"
+                                    href={projects[4].github_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    role="button"
+                                    alt="GitHub icon"
+                                >
+                                    <FaGithub color="black" size={25} />
+                                </a>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <Card variant="top" bg="secondary" className="m-3">
+                        <Card.Img src={CodingQuiz} alt="Card image" />
+                        <Card.Body>
+                            <Card.Title className="text-dark"><b> <a className="text-dark" href={projects[5].deployed_url}>{projects[5].title}</a></b> </Card.Title>
+                            <Card.Text className="text-dark">
+                                <b><em>This is a wider card with supporting text below as a natural lead-in
+                                    to additional content. This content is a little bit longer.</em></b>
+                                <a
+                                    className="btn justify-content-md-center mx-1"
+                                    href={projects[5].github_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    role="button"
+                                    alt="GitHub icon"
+                                >
+                                    <FaGithub color="black" size={25} />
+                                </a>
+                            </Card.Text>
+                        </Card.Body>
                     </Card>
                 </CardGroup>
 
