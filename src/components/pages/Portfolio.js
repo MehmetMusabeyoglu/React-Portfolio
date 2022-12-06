@@ -57,7 +57,7 @@ function Portfolio() {
                             <Card.Text className="text-dark pt-3">
                                 <b><em>JavaScript/Node.js/Express.js/IndexedDB</em></b>
                                 <a
-                                    className="btn justify-content-md-center pt-3 mx-1"
+                                    className="btn justify-content-md-center pt-1 mx-1"
                                     href={projects[0].github_url}
                                     target="_blank"
                                     rel="noreferrer"
@@ -76,7 +76,7 @@ function Portfolio() {
                             <Card.Text className="text-dark  pt-3">
                                 <b><em>HTML/CSS/JavaScript/jQuery/Tailwind</em></b>
                                 <a
-                                    className="btn justify-content-md-center pt-3 mx-1"
+                                    className="btn justify-content-md-center pt-1 mx-1"
                                     href={projects[1].github_url}
                                     target="_blank"
                                     rel="noreferrer"
@@ -97,7 +97,7 @@ function Portfolio() {
                             <Card.Text className="text-dark pt-3">
                                 <b><em>JavaScript/Express.js/MySQL/Handlebars</em></b>
                                 <a
-                                    className="btn justify-content-md-center pt-3 mx-1"
+                                    className="btn justify-content-md-center pt-1 mx-1"
                                     href={projects[2].github_url}
                                     target="_blank"
                                     rel="noreferrer"
@@ -116,7 +116,7 @@ function Portfolio() {
                             <Card.Text className="text-dark pt-3">
                                 <b><em>HTML/CSS/JavaScript/JQuery/Bootstrap</em></b>
                                 <a
-                                    className="btn justify-content-md-center pt-3 mx-1"
+                                    className="btn justify-content-md-center pt-1 mx-1"
                                     href={projects[3].github_url}
                                     target="_blank"
                                     rel="noreferrer"
@@ -137,7 +137,7 @@ function Portfolio() {
                             <Card.Text className="text-dark pt-3">
                                 <b><em>HTML/CSS/JavaScript/Node.js/Bootstrap</em></b>
                                 <a
-                                    className="btn justify-content-md-center pt-3 mx-1"
+                                    className="btn justify-content-md-center pt-1 mx-1"
                                     href={projects[4].github_url}
                                     target="_blank"
                                     rel="noreferrer"
@@ -154,9 +154,9 @@ function Portfolio() {
                         <Card.Body>
                             <Card.Title className="text-dark"><b> <a className="text-dark" href={projects[5].deployed_url}>{projects[5].title}</a></b> </Card.Title>
                             <Card.Text className="text-dark pt-3">
-                                <b><em>HTML/CSS/JavaScript/Node.js/Bootstrap</em></b>
+                                <b><em>HTML/CSS/JavaScript</em></b>
                                 <a
-                                    className="btn justify-content-md-center pt-3 mx-1"
+                                    className="btn justify-content-md-center pt-1 mx-1"
                                     href={projects[5].github_url}
                                     target="_blank"
                                     rel="noreferrer"
