@@ -32,7 +32,7 @@ export default function Main() {
       <header>
         <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>
-      <main  className="d-flex flex-wrap">
+      <main>
         {renderPage()}
         <Footer />
       </main>
