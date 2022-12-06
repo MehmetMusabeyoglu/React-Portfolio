@@ -12,7 +12,7 @@ function NavBar({ currentPage, handlePageChange }) {
                     <Navbar.Brand className="text-dark" href="/"><em>Mehmet Musabeyoglu</em></Navbar.Brand>
                     <Nav justify variant="tabs" defaultActiveKey={"/"} onSelect={(item) => handlePageChange(item)}>
                         <Nav.Item>
-                            <Nav.Link className="text-dark" href={"AboutMe"}>About</Nav.Link>
+                            <Nav.Link className="text-dark" eventKey={"AboutMe"}>About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link className="text-dark" eventKey={"Portfolio"}>Portfolio</Nav.Link>
