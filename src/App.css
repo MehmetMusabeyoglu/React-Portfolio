@@ -3,9 +3,9 @@ body {
 }
 
 .main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; */
   width: 1000px;
   min-height: 750px;
   background: #2D2424;
