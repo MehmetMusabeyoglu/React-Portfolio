@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import TextEditor from "../assets/TextEditor.jpg";
-import BookReco from "../assets/BookReco"s.png";
+import BookReco from "../assets/BookReco's.png";
 import BILL$ from "../assets/BILL$.jpg";
 import WeatherDashboard from "../assets/WeatherDashboard.jpg";
 import NoteTaker from "../assets/NoteTaker.gif";

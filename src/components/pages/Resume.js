@@ -1,6 +1,6 @@
-import React from 'react';
-import ListGroup from 'react-bootstrap/ListGroup';
-import CV from '../assets/CV.pdf';
+import React from "react";
+import ListGroup from "react-bootstrap/ListGroup";
+import CV from "../assets/CV.pdf";
 
 export default function Resume() {
   return (
