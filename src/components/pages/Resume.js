@@ -17,7 +17,7 @@ export default function Resume() {
       <ListGroup.Item variant="dark">MongoDB</ListGroup.Item>
       <ListGroup.Item variant="dark">React</ListGroup.Item>
     </ListGroup>
-      <h2 className="text-center text-light pt-3">My resume is <a href={CV} download="CV.pdf"> here </a> </h2>
+      <h2 className="text-center text-light pt-3">My resume is <a class="text-muted" href={CV} download="CV.pdf"> here </a> </h2>
    
     </div>
   );

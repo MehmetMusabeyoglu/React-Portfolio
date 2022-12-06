@@ -7,20 +7,26 @@ import Navbar from 'react-bootstrap/Navbar';
 function NavBar({ currentPage, handlePageChange }) {
     return (
         <div>
-            <Nav justify variant="tabs" defaultActiveKey={"AboutMe"}  onSelect={(item) => handlePageChange(item)}>
-                <Nav.Item>
-                    <Nav.Link href={"AboutMe"}>About Me</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey={"Portfolio"}>Portfolio</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey={"Resume"}>Resume</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey={"Contact"}>Contact</Nav.Link>
-                </Nav.Item>
-            </Nav>
+            <Navbar bg="secondary" expand="lg">
+                <Container>
+                    <Navbar.Brand className="text-dark" href="/"><em>Mehmet Musabeyoglu</em></Navbar.Brand>
+                    <Nav justify variant="tabs" defaultActiveKey={"AboutMe"} onSelect={(item) => handlePageChange(item)}>
+                        <Nav.Item>
+                            <Nav.Link className="text-dark" href={"AboutMe"}>About</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link className="text-dark" eventKey={"Portfolio"}>Portfolio</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link className="text-dark" eventKey={"Resume"}>Resume</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link className="text-dark" eventKey={"Contact"}>Contact</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Container>
+            </Navbar>
+
         </div>
     );
 }

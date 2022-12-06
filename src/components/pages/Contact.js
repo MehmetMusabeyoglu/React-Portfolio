@@ -76,7 +76,7 @@ function Contact() {
     };
 
     return (
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+        <div>
             <h2 className="text-center text-light pt-3"><b>Contact Me!</b></h2>
             <Form>
                 <Form.Group className="m-2" controlId="formBasicName">
@@ -107,7 +107,7 @@ function Contact() {
                         aria-label="Your message"
                         placeholder="Message" />
                 </Form.Group>
-                <Button className="m-4" variant="primary" onClick={handleFormSubmit} type="submit">
+                <Button className="m-4 text-dark" variant="secondary" onClick={handleFormSubmit} type="submit">
                     Submit
                 </Button>
             </Form>
