@@ -11,7 +11,7 @@ export default function Main() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
 
   const renderPage = () => {
-    if (currentPage === "AboutMe") {
+    if (currentPage === "/") {
       return <AboutMe />;
     }
     if (currentPage === "Portfolio") {
