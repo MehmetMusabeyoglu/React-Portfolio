@@ -5,7 +5,6 @@ import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
-import "./styles/Main.css";
 
 
 export default function Main() {
