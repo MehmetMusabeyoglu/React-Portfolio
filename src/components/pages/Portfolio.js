@@ -34,9 +34,9 @@ function Portfolio() {
             "github_url": "https://github.com/MehmetMusabeyoglu/Weather-Dashboard"
         },
         {
-            "title": "Note Taker",
-            "deployed_url": "https://mehmet-note-taker.herokuapp.com/",
-            "github_url": "https://github.com/MehmetMusabeyoglu/Note-Taker"
+            "title": "Cookie Corner",
+            "deployed_url": "https://cmcookiecorner.herokuapp.com/",
+            "github_url": "https://github.com/wseban/Cookie-Corner"
         },
         {
             "title": "Coding Quiz",
